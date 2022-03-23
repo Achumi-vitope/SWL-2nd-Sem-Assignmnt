@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Home
+        </title>
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+            <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.css">
+            <link rel ="stylesheet" href="{{url_for('static', filename='index.css') }}">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <meta charset="UTF-8">
+            <meta name="BCA_web" author="vitope">
+            <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="static/style.css"/>
+            <link rel="stylesheet" href="static/mobile.css"/>
+            <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <style>
+                html {
+                scroll-behavior: smooth;
+                height: 100%;
+                }
+        </style>     
+    </head>
+    <header class="header">
+        <a href="" class="logo">Hello, {{session.username}}</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Materials">Materials</a></li>
+            <li><a href="#Ourteach">Teachers</a></li>
+            <li><a href="#Info">Info</a></li>
+
+        </ul>
+      </header>
+    <body>
+    <div id="canvas">
+            <section id="start_element">
+                <img src="static/images/bulb.png" alt="Could not load image">
+                <span class="text_elementOne">
+                    <p><strong>Welcome</strong><br>to Tetso College BCA student's personal web.<br>
+                    Established in (date), we try to provide all the required materials for BCA students to get through their semesters.
+                    <br>
+                    <q class="quote"><i>If future generations are to remember us more with gratitude than sorrow, we must achieve more than just the miracles of technology. We must also leave them a glimpse of the world as it was created, not just as it looked when we got through with it.</i></q>
+                    <br> <span id="quote"> ~ Lyndon B. Johnson</span>
+                </p>
+                </span>
+            </section>
+            <div id="Home">.</div>
+            <section id="second_element">
+                <h2 class="element2_heading" id="Materials">Materials We Provide</h2>
+                <div class="materials_list">
+                    <div class="children">
+                        <div class="child" id="#Notes">Notes</div>
+                        <div class="child" id="#Syll">Syllabus</div>
+                        <div class="child" id="#Qp">Question Papers</div>
+                        <div class="child"id="#Plang">Programming Solutions</div>
+                    </div>
+                </div>
+                <h2 class="element2_heading" id="Ourteach">Our Teachers</h2>
+                <!--Teacher profile card slider-->
+            </section>
+        </div>
+        <div class="blog-slider">
+            <div class="blog-slider__wrp swiper-wrapper">
+          
+              <div class="blog-slider__item swiper-slide">
+                <div class="blog-slider__img">
+                  <img src="static/images/teachers/english.jpg" alt="Could not load image">
+                </div>
+                <div class="blog-slider__content">
+                  <span class="blog-slider__code">Department of English</span>
+                  <div class="blog-slider__title">Sir Imchenmeren</div>
+                  <div class="blog-slider__text">Mphil(ICFAI University)
+                    MA English( Nagaland University)
+                    BA( Nagaland University)<br>
+                    Email: imchenmeren@tetsocollege.org<br>
+                    <a href="https://www.linkedin.com/in/imchenmeren-naga-b89b3a226">LinkedIn</a></div>
+                </div>
+              </div>
+              
+              <div class="blog-slider__item swiper-slide">
+                <div class="blog-slider__img">
+                  <img src="static/images/teachers/del.jpg" alt="Could not load image">
+                </div>
+                <div class="blog-slider__content">
+                  <span class="blog-slider__code">Department of Computer Science</span>
+                  <div class="blog-slider__title">Sir Nayan</div>
+                  <div class="blog-slider__text">
+                    Asst. Professor | POC Computer Science
+                    PhD Pursuing(NERIST)
+                    M.Tech (IT)(Tezpur University)
+                    M.Sc (IT)(Gauhati University)
+                    B.Sc (IT)( LCB College, Gauwahati)
+                    NET & GATE Qualified<br>
+                    Email: nayan@tetsocollege.org<br>
+                    <a href="https://www.linkedin.com/in/nayan-sarkar-558595218">LinkedIn</a>
+
+                </div>
+                  
+                </div>
+              </div>
+              
+              <div class="blog-slider__item swiper-slide">
+                <div class="blog-slider__img">
+                  <img src="static/images/teachers/maths.jpg" alt="Could not load image">
+                </div>
+                <div class="blog-slider__content">
+                  <span class="blog-slider__code">Mathematics</span>
+                  <div class="blog-slider__title">Sir Nangshiba Longkumer</div>
+                  <div class="blog-slider__text">
+                    Visiting Faculty (Full Time) | Asst. Professor
+                    Masters of Science(Mathematics) Pondicherry University
+                    Bachelors of Science(Mathematics) NU
+                    NET Qualified.<br>
+                    Email: nangshiba@tetsocollege.org<br>
+                    <a href="https://www.linkedin.com/in/nangshiba-lkr-717b7921a">LinkedIn</a>
+                  </div>
+                </div>
+              </div>
+              <div class="blog-slider__item swiper-slide">
+                <div class="blog-slider__img">
+                  <img src="https://i.pinimg.com/564x/29/9b/f3/299bf3f431d864a1344d563eb4fd2715.jpg" alt="Could not load image">
+                </div>
+                <div class="blog-slider__content">
+                  <span class="blog-slider__code">26 December 2019</span>
+                  <div class="blog-slider__title">Sir Talinungsung</div>
+                  <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+                </div>
+              </div>
+              
+            </div>
+            <div class="blog-slider__pagination"></div>
+          </div>
+          <div class="progress_bar" id="Info">
+                <h3>Progress Bar</h3>
+                <p class="py_text">Python:</p>
+                <div class="progressPy">
+                    <div class="progress-valuePython"></div>
+                </div>
+                <br>
+                <p class="py_text">HTML:</p>
+                <div class="progressHt">
+                    <div class="progress-valueHtml"></div>
+                </div>
+                <br>
+                <p class="py_text">CSS</p>
+                <div class="progressCs">
+                    <div class="progress-valueCss"></div>
+                </div>
+                <br>
+                <p class="py_text">Javascript</p>
+                <div class="progressJs">
+                    <div class="progress-valueJs"></div>
+                </div>
+                <div id="Contact">
+                    <div id="author">
+                        <i class="fa fa-instagram" aria-hidden="true"><a href="https://www.instagram.com/shacdat_s/?hl=en" target="_blank">Creator</a></i>
+                        <br>
+                        <i class="fa fa-building"  aria-hidden="true"><a href="https://tetsocollege.org/" target="_blank">College</a></i>
+                        <br>
+                        <i class="fa fa-envelope-o" aria-hidden="true"><a href="mailto:vitope@tetsocollege.org"target="_blank" >E-mail</a></i>
+                    </div>
+                    <hr>
+                    <div id="design">
+                        <p>Designed By Vitope Achumi</p>
+                    </div>
+                  </div>
+          </div>
+    </body>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+        <script type="text/javascript" src="static/script.js"></script>
+        <script src="https://kit.fontawesome.com/c644c60116.js" crossorigin="anonymous"></script>
+        <script src = "static/index.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</html>
